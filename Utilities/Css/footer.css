@@ -1,0 +1,29 @@
+footer {
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: Nunito Sans,sans-serif;
+    margin-bottom: 1px;
+}
+
+.footerbody
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: #303030;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    justify-content: center; 
+}
+
+.footerbody p 
+{
+    margin-bottom: 0;
+}
+
+footer #footerReserved
+{
+   color: #56887D;
+}

@@ -1,0 +1,108 @@
+.body
+{
+  background-color: #fff; 
+  min-height: 92.99vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.body .bodycontent
+{
+    width: 60%;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+.bodycontent  form h4
+{
+  border-bottom: 2px solid #303030;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bodycontent form
+{
+  color: #303030;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+  
+table
+{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+table tr
+{
+  height: 65px;
+}
+
+table tr input
+{
+  height: 30px;
+  width: 100%;
+  border: none;
+  padding-left: 5px;
+  border-bottom: 1px solid;
+}
+
+table tr #itemfile
+{
+  border-bottom: none;
+}
+
+table tr select
+{
+    height: 30px;
+    width: 60%;
+    padding-left: 5px;
+}
+
+.button
+{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bodycontent form #submit, #reset
+{
+    width: 200px;
+    height: 40px;
+    margin-right: 80px;
+}
+
+.bodycontent form #submit
+{
+    background-color: #303030;
+    color: #f3f3f3;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.bodycontent form #reset
+{
+    background-color: #f3f3f3;
+    color: #303030;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.bodycontent form #submit:hover
+{
+    color: #fff;
+    background-color:  #28282B;
+    border-color:  #28282B;
+}
+
+.bodycontent form #reset:hover
+{
+    border-color: #28282B;
+    background-color: #fff;
+    color: #28282B;
+}

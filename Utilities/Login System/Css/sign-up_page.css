@@ -1,0 +1,47 @@
+.middle
+{
+    height: auto;
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.middle .formbody
+{
+    height: 450px;
+}
+
+.middle .formfooter
+{
+    font-size: larger;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+    width: auto;
+}
+
+.input
+{
+    margin-top: 10px;
+    height: 50px;
+}
+
+#Password
+{
+   margin-top: 25px;
+}
+
+.input #submit
+{
+    margin-top: 50px;
+}
+
+.error
+{
+    font-size: x-small;
+    margin-bottom: 5px;
+}
+
+.middle input
+{
+    font-size: medium;
+}

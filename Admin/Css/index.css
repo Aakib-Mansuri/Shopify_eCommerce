@@ -1,0 +1,57 @@
+.body
+{
+min-height: 92.99vh;
+display: flex;
+justify-content: center;
+background-color: #fff; 
+padding-top: 130px;
+}
+
+.body .bodycontent
+{
+   height: 70vh;
+   width: 80%;
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+
+.bodycontent .boxes
+{
+   border: 1px solid #303030;
+   height: 50%;
+   width: 70%;
+   border-radius: 10px;
+   box-shadow: 7px 9px #6EA893;
+   background-color: #f2f2f2;
+   display: flex;
+   align-items: center;
+   padding-left: 10px;
+}
+
+.bodycontent .boxes .boximg
+{
+border-radius: 20%;
+background-color: #303030;
+overflow: hidden;
+padding: 7px; 
+margin-right: 7px; 
+}
+
+.bodycontent .boxes img
+{
+height: 45px;
+}
+
+.bodycontent .boxes .boxetext
+{
+   margin-left: 20px;
+   font-size: larger;
+   color: #303030;
+   text-align: center;
+   line-height: 30px;
+}
+
+.bodycontent a
+{
+   text-decoration: none;
+}

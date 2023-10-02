@@ -1,0 +1,85 @@
+.body
+{
+  background-color: #fff; 
+  min-height: 92.99vh;
+  padding: 10px 100px;
+}
+.body .bodycontent
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  grid-row-gap: 50px;
+}
+.card
+{
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 370px;
+}
+  
+.card .card-img-top
+{
+  height: 60%;
+  border-bottom: 1px solid rgba(131, 39, 41, 0.1);
+}
+
+.card .card-body
+{
+  height: 40%;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.card a
+{
+    text-decoration: none;
+    color: #6b7177;
+}
+
+.card .card-body h5
+{
+    color: #212326;
+    font-size: large;
+    margin-bottom: 2px;
+}
+
+.card .card-body p
+{
+    color:  #212326;
+    margin-bottom: 10px;
+}
+
+.card .btn-primary
+{
+  width: 100%;
+  font-size: medium;
+  font-weight: 600;
+  padding: 5px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card .btn-primary
+{
+  background-color: #fff;
+  border: 0.01em solid   #212529;
+  border-radius: 5px;
+  color: #212529;
+} 
+
+.card .btn-primary:hover
+{
+  background-color: #212529;
+  color: #ffff;
+}
+
+.NotFound{
+   height: 70vh;
+   margin-top: 30px;
+   margin-left: 150px;
+ }

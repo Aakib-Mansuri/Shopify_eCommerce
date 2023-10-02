@@ -1,0 +1,137 @@
+#mainbody {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    margin: 0;
+    min-height: 92.99vh;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.cart-container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #28282B;
+    color: #fff;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.des{
+    text-align: left;
+}
+
+.desh {
+    margin: 0px; 
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+
+.desp {
+    margin: 0px; 
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.qtytd{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.minus{
+    cursor: pointer;
+    margin-right: 2px;
+    background-color: #fff;
+    border: none;
+    font-size: larger;
+    -ms-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+
+.add{
+    cursor: pointer;
+    margin-left: 2px;
+    background-color: #fff;
+    border: none;
+    font-size: larger;
+    -ms-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+
+.qtyp{
+    border: 1px solid;
+    border-radius: 5px;
+    min-width: 50px; 
+    padding: 2px;
+}
+
+.delete-button {
+    color: #28282B;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: medium;
+}
+
+.total-amount {
+    text-align: right;
+    font-weight: bold;
+    display: flex;justify-content: right;
+}
+
+.total-amount .amount{
+    color: #56887D;
+}
+
+.proceed-button {
+    background-color: #fff;
+    border: 0.01em solid   #212529;
+    border-radius: 5px;
+    color: #212529;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.proceed-button:hover
+{
+    background-color: #212529;
+    color: #ffff;
+}
+
+.Empty{
+    height: 70vh;
+    margin-top: 30px;
+    margin-left: 400px;
+}
