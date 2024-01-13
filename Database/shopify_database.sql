@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2023 at 12:32 PM
+-- Generation Time: Jan 13, 2024 at 02:23 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -119,7 +119,7 @@ CREATE TABLE `productdetails` (
 
 INSERT INTO `productdetails` (`ProductId`, `CategoryId`, `Name`, `Description`, `Price`, `Quantity`, `ImageUrl`, `Status`) VALUES
 (9, 7, 'Realme 11 Pro+', 'Additional Upto 12GB Dynamic RAM, 200 MP SuperZoom Camera With OIS, Curved Display of 120 Hz, 100W SUPERVOOC Adapter, Designed With Premium Vegan Leather, 7050 5G Chipset Dimensity, 32MP Sony Front Camera', 29869, 24, '../Product Images/2023-07-29 Realme 11 Pro+.jpg', 'Live'),
-(10, 12, 'Vector X Ranger Tennis', 'With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether its hard core fitness or trying your hands on your favorite sport, we are there for you.', 869, 6, '../Product Images/2023-07-29 Vector X Ranger Tennis.jpg', 'Live'),
+(10, 12, 'Vector X Ranger Tennis', 'With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether its hard core fitness or trying your hands on your favorite sport, we are there for you.', 869, 5, '../Product Images/2023-07-29 Vector X Ranger Tennis.jpg', 'Live'),
 (14, 7, 'Apple iPhone 15', 'DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution.', 89900, 24, '../Product Images/2023-09-21 Apple iPhone 15.jpg', 'Live'),
 (15, 7, 'Samsung Galaxy S23', '200MP. Wow-worthy resolution - Resolution on the Wide-angle Camera has nearly doubled, delivering strikingly clear photos. Low light. Camera. Action - A Pro-grade Camera grabs brighter photos and video, dusk to dawn.', 134999, 24, '../Product Images/2023-09-21 Samsung Galaxy S23.jpg', 'Live'),
 (16, 1, 'Apple Watch Ultra', 'EXTREMELY RUGGED, INCREDIBLY CAPABLE — 49-millimetre corrosion-resistant titanium case. Larger Digital Crown and more accessible buttons. 100-metre water resistance. FOR OUTDOOR ADVENTURERS — Redesigned Compass app delivers all-new views and functionality', 82999, 14, '../Product Images/2023-09-21 Apple Watch Ultra Smart Watch.jpg', 'Live'),
@@ -169,14 +169,16 @@ INSERT INTO `salesorder` (`OrderId`, `DateTime`, `UserId`, `Amount`, `BillStatus
 (12, '2023-09-28', 4, 5258, 'Generated', 'Delivered'),
 (13, '2023-09-28', 4, 5258, 'Not Generate', 'Cancelled'),
 (14, '2023-09-28', 4, 36845, 'Generated', 'Delivered'),
-(15, '2023-10-02', 10, 2589, 'Not Generate', 'Pending'),
+(15, '2023-10-02', 10, 2589, 'Generated', 'Pending'),
 (16, '2023-10-02', 10, 89900, 'Generated', 'In Transit'),
 (17, '2023-10-02', 10, 84566, 'Generated', 'Delivered'),
 (18, '2023-10-02', 11, 4007, 'Not Generate', 'Pending'),
 (19, '2023-10-02', 11, 1999, 'Not Generate', 'Pending'),
 (20, '2023-10-02', 4, 3597, 'Not Generate', 'Pending'),
 (21, '2023-10-02', 12, 2881, 'Not Generate', 'Pending'),
-(22, '2023-10-02', 12, 4998, 'Generated', 'Delivered');
+(22, '2023-10-02', 12, 4998, 'Generated', 'Delivered'),
+(23, '2023-12-15', 3, 869, 'Not Generate', 'Cancelled'),
+(24, '2023-12-15', 4, 869, 'Not Generate', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -228,7 +230,9 @@ INSERT INTO `salesorderdetails` (`OrderId`, `ProductId`, `Quantity`, `Amount`) V
 (20, 19, 2, 1598),
 (21, 23, 1, 1883),
 (21, 25, 2, 998),
-(22, 27, 2, 4998);
+(22, 27, 2, 4998),
+(23, 10, 1, 869),
+(24, 10, 1, 869);
 
 -- --------------------------------------------------------
 
@@ -333,7 +337,7 @@ ALTER TABLE `productdetails`
 -- AUTO_INCREMENT for table `salesorder`
 --
 ALTER TABLE `salesorder`
-  MODIFY `OrderId` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `OrderId` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
